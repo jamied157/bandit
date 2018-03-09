@@ -16,7 +16,6 @@ for i in range(2000):
 	optimal_record = [1 if action == optimal_action else 0 for action in pull_record]
 	optimal_play = optimal_play + (1/(i+1))*(optimal_record - optimal_play)
 	#have updated the optimal play matrix
-	print(i)
 
 average_reward = np.zeros(1001)
 for i in np.arange(1000):
